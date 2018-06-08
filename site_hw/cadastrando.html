@@ -1,0 +1,37 @@
+<?php
+ $host = "localhost";
+ $user = "root";
+ $pass = "";
+ $banco = "cadastro";
+ $conexao = mysql_connect("$host, $user, $pass") or die (mysql error());
+ mysql_select_db($banco) or die(mysql error());
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrando usuário</title>
+    <script type="text/javascript">
+    function success (){
+        setTimeout(window.location='index.html', 5000);
+    }
+    </script>
+</head>
+<body>
+
+<?php
+$nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$sql = mysql_query("INSERT INTO usuarios(nome, sobrenome, email, senha)
+VALUES('$nome', '$sobrenome', '$email', '$senha')");
+    echo "<center><h1>Cadastro efetuado com sucesso!</h1></center>";
+    echo "<script>success()</script>";
+
+?>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    font-family: michroma, sans-serif;
+    background-color: #43283f;
+    color: #fff;
+}
+
+#total{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+#topo{
+    width: 1000px;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#logo{
+    float: left;
+}
+
+#menu{
+    float: right;
+    line-height: 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #b9531d;
+    margin-left: 20px;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+    color: #35d0d0;    
+}
+
+.coluna{
+    float: left;
+    width: 480px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#coluna2{
+    margin-right: 0;
+}
+
+.coluna h2{
+    color: #35d0d0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.coluna p{
+    color: #fff;
+    font-size: 15px;
+}
+
+#titulo3{
+    float: none;
+    width: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+footer{
+    padding-top: 400px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    width: 1000px;
+    height: auto;
+    font-size: 15px;
+}
+
+#campo1{
+    float: left;
+    margin-left: 150px;
+}
+
+#campo2{
+    float: right;
+    margin-right: 150px
+}
+
+#campoemail{
+    width: 250px;
+    height: 30px;
+}
+
+#camposenha{
+    width: 250px;
+    height: 30px;
+}
+
+#botao{
+    margin-top: 10px;
+    width: 70px;
+    background-color: #b9531d;
+    border: none;
+    padding: 10px 0;
+}
+
+#campobuscar{
+    width: 250px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

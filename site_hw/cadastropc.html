@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardwares - Buscar</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div id="total">
+     <header id="topo">
+         <div id="logo">
+             <img src="img/logo.png" alt="Logo da Empresa">
+         </div>
+         <nav id="menu">
+             <a href="index.html">HOME</a>
+             <a href="quemsomos.html">QUEM SOMOS</a>
+             <a href="buscar.html">BUSCAR</a>
+             <a href="login.html">LOGIN</a>
+         </nav>
+     </header>
+     <div class="coluna" id="titulo3">
+        <h2>Área de buscar</h2>
+         <p>    Faça aqui uma busca, um cadastro, ou exclua um produto.</p>
+     </div>
+     
+     <?php 
+         $query = "SELECT * FROM hardwares";
+     ?>
+     <form # >
+     <div class="form-group">
+         <label>Cadastre: </label>
+         <input type="text" class="form-control" id="campobuscar" placeholder=" pesquise seu hardware">
+         <input type="submit" class="btn btn-success" id="botao" value="Cadastrar">
+     </div>
+     </form>
+     
+     <footer>
+         HARDWARES - TODOS OS DIREITOS RESERVADOS
+     </footer>      
+  </div>    
+</body>
+</html>

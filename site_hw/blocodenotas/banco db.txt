@@ -1,0 +1,39 @@
+create database cadastro;
+
+create table usuarios(
+    
+id int not null primary key auto_increment,
+nome varchar (15) not null,
+sobrenome varchar (15) not null,
+email varchar (35) not null,
+senha varchar (20) not null
+);
+
+
+
+create database hardware;
+
+create table foto(
+    cod_foto int not null primary key auto_increment,
+    arquivo varchar (30) not null,
+    data datetime
+);
+
+create table hd(
+    cod_hd int not null primary key auto_increment,
+    armazenamento varchar (6) not null,
+    marca varchar (12) not null
+);
+
+create table computador(
+    cod_computador int not null primary key auto_increment,
+    marca varchar (12) not null,
+    modelo varchar (12) not null,
+    placa_mae varchar (20) not null,
+    memoria_ram varchar (5) not null,
+    armazenamento varchar (6) not null,
+    foreign key (armazenamento) references hd (cod_hd) on delete cascade on update cascade,
+    processador varchar (9) not null,
+    arquivo varchar (30) not null,
+    foreign key (arquivo) references foto (cod_foto) on delete cascade on update cascade
+);
